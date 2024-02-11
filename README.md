@@ -1,5 +1,4 @@
-<p align="center">
-  <img src="https://github.com/DYNOSTAR/AirBnB_clone/blob/master/65f4a1dd9c51265f49d0.png?raw=true" alt="HolbertonBnB logo">
+  <img src="https://github.com/DYNOSTAR/AirBnB_clone/blob/main/web_static/images/65f4a1dd9c51265f49d0.png?raw=true" alt="HolbertonBnB logo">
 </p>
 
 <h1 align="center">HolbertonBnB</h1>
