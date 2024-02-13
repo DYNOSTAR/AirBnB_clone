@@ -94,18 +94,18 @@ class HBNBCommand(cmd.Cmd):
                     re.sub("[\"\']", "", args[0]),
                     re.sub("[\"\']", "", args[1]), args[2])
 
-    def do_help(self, arg):
+    def help(self, arg):
         """To get help on a command, type help <topic>.
         """
         return super().do_help(arg)
 
-    def do_EOF(self, line):
+    def EOF(self, line):
         """Inbuilt EOF command to gracefully catch errors.
         """
         print("")
         return True
 
-    def do_quit(self, arg):
+    def quit(self, arg):
         """Quit command to exit the program.
         """
         return True
@@ -115,7 +115,7 @@ class HBNBCommand(cmd.Cmd):
         """
         pass
 
-    def do_create(self, arg):
+    def create(self, arg):
         """Creates a new instance.
         """
         args = arg.split()
@@ -126,7 +126,7 @@ class HBNBCommand(cmd.Cmd):
         new_obj.save()
         print(new_obj.id)
 
-    def do_show(self, arg):
+    def show(self, arg):
         """Prints the string representation of an instance.
         """
         args = arg.split()
@@ -141,7 +141,7 @@ class HBNBCommand(cmd.Cmd):
             return
         print(req_instance)
 
-    def do_destroy(self, arg):
+    def destroy(self, arg):
         """Deletes an instance based on the class name and id.
         """
         args = arg.split()
@@ -158,7 +158,7 @@ class HBNBCommand(cmd.Cmd):
         del instance_objs[key]
         storage.save()
 
-    def do_all(self, arg):
+    def all(self, arg):
         """Prints string representation of all instances.
         """
         args = arg.split()
